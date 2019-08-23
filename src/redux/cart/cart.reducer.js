@@ -1,6 +1,6 @@
 // jshint esversion:6
 import { cartActionTypes } from './cart.types';
-import { addItemToCart } from './cart.utils';
+import { addItemToCart, decreaseItemQuantity } from './cart.utils';
 
 const INITIAL_STATE = {
     hidden: true,
@@ -19,7 +19,16 @@ const cartReducer = (state=INITIAL_STATE, action) => {
                 ...state,
                 cartItems: addItemToCart(state.cartItems, action.payload)
             });
-
+        case cartActionTypes.CLEAR_ITEM:
+            return ({
+                ...state,
+                cartItems: state.cartItems.filter(cartItem => cartItem.name !== action.payload.name)
+            });
+        case cartActionTypes.DECREASE_QUANTITY:
+            return ({
+                ...state,
+                cartItems: decreaseItemQuantity(state.cartItems, action.payload)
+            });
         default:
             return state;
     }
