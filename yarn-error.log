@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add reselect
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add redux-persist
 
 PATH: 
   /home/austin/bin:/home/austin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -8,7 +8,7 @@ Yarn version:
   1.17.3
 
 Node version: 
-  10.16.2
+  10.16.3
 
 Platform: 
   linux x64
@@ -30,7 +30,8 @@ npm manifest:
       "react-router-dom": "^5.0.1",
       "react-scripts": "3.1.1",
       "redux": "^4.0.4",
-      "redux-logger": "^3.0.6"
+      "redux-logger": "^3.0.6",
+      "reselect": "^4.0.0"
     },
     "scripts": {
       "start": "react-scripts start",
@@ -9091,6 +9092,11 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
     integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+  
+  reselect@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+    integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
   
   resolve-cwd@^2.0.0:
     version "2.0.0"
