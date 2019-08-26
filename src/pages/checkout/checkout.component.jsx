@@ -8,11 +8,11 @@ import CheckoutItem from '../../components/checkout-item/checkout-item.component
 import StripeButton from '../../components/stripe-button/stripe-button.component';
 
 // to test stripe payment component
-const testCreditCart = {
-    cardNumber: '4242 4242 4242 4242',
-    expirationDate: '01/20',
-    cvv: '123'
-};
+// const testCreditCart = {
+//     cardNumber: '4242 4242 4242 4242',
+//     expirationDate: '01/20',
+//     cvv: '123'
+// };
 
 const CheckOut = ({ cartItems, total }) => {
     return (

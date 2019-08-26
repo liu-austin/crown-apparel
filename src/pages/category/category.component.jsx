@@ -5,7 +5,6 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 import { selectCategory } from '../../redux/collection/collection.selectors';
 import { connect } from 'react-redux';
 
-
 const Category = ({ category }) => {
     const {title, items} = category;
     return (

@@ -32,7 +32,7 @@ class App extends React.Component {
           });
         });
       } else { 
-        // userAuth is null so set that to current user
+        // userAuth is null so set that to current user aka no current user
         this.props.setCurrentUser(userAuth);
       }
     });
